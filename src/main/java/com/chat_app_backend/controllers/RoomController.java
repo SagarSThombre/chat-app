@@ -22,6 +22,7 @@ public class RoomController {
     @PostMapping
     public ResponseEntity<?> createRoom(@RequestBody String roomId){
         try{
+            System.out.println("Saving room: " + roomId);
             Room room = roomService.createRoom(roomId);
             return ResponseEntity.status(HttpStatus.CREATED).body(room);
         }catch (RuntimeException ex){

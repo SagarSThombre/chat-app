@@ -23,6 +23,7 @@ public class RoomServiceImpl implements RoomService {
 
         Room room = new Room();
         room.setRoomId(roomId);
+        System.out.println("Saving room: " + room.getRoomId());
         return roomRepository.save(room);
     }
 
