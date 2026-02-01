@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Setter
 @Getter
 @AllArgsConstructor
@@ -14,6 +16,4 @@ public class MessageRequest {
     private String content;
     private String sender;
     private String roomId;
-
-
 }
